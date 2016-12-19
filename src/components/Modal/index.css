@@ -1,9 +1,12 @@
 .modal {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    font-size: 5em;
-    background-color: var(--colorPrimary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     z-index: 100;
+    height: 100vh;  
+
     text-align: center;
+    font-size: 2em;
+    background-color: var(--colorPrimary);
 }
