@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import warning from "warning"
 import { BodyContainer, joinUri} from "phenomic"
 
+import styles from "./index.css"
 import Loading from "../../components/Loading"
 
 const BasicPage = (
@@ -43,23 +44,21 @@ const BasicPage = (
   ]
 
   return (
-    <div>
+    <div className={styles.basicpage}>
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
-      <div>
         { header }
-        <div>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
-        { children }
-        { footer }
+      <div>
+        {
+          isLoading
+          ? <Loading />
+          : <BodyContainer>{ body }</BodyContainer>
+        }
       </div>
+      { children }
+      { footer }
     </div>
   )
 }
