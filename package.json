@@ -3,6 +3,7 @@
   "name": "hellomuhajir-react",
   "homepage": "https://hellomuhajir.com",
   "twitter": "_muhajir_",
+  "email": "muhajir@hellomuhajir.com",
   "repository": "https://github.com/muhajirframe/hellomuhajir-react",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",

@@ -1,22 +1,15 @@
-import React from "react"
+import React, {PropTypes} from "react"
 
 import styles from "./index.css"
 
-const Footer = () => (
+const Footer = (props, { metadata : { pkg } }) => (
   <footer className={ styles.footer }>
-    { /* If you like Phenomic, this is a way to share the love ;) */ }
-    <p>
-      <a
-        href={ process.env.PHENOMIC_HOMEPAGE }
-        className={ styles.phenomicReference }
-      >
-        { "Website generated with " }
-        <span className={ styles.phenomicReferenceName }>
-          {  `<${ process.env.PHENOMIC_NAME} />` }
-        </span>
-      </a>
-    </p>
+    <a>{pkg.email}</a>
   </footer>
 )
+
+Footer.contextTypes = {
+  metadata : PropTypes.object.isRequired,
+}
 
 export default Footer
