@@ -26,18 +26,19 @@ class Bar extends Component {
         ))
         return (
             <header className={styles.header}>
-                <Link to={ "/" }>
-                    HOME
-                </Link>
-                <nav className={styles.nav}>
-                    {navigations}
-                    <Link to='/'>
-                        <button className={styles.menuIcon} key='icon'
-                        onClick={this.handleMenuClick}>ICON</button>
+                <nav className={styles.homenav}>
+                    <Link to={ "/" }>
+                        HOME
+                    </Link>
+                    <div style={styles.anothernav}>
+                        {navigations}
+                    </div>
+                    <Link to='/' className={styles.menuIcon}>
+                        <button onClick={this.handleMenuClick}>ICON</button>
                     </Link>
                 </nav>
                 { this.state.isModalOpen &&
-                    <Modal navItems={this.props.navItems} /> }
+                <Modal navItems={this.props.navItems} /> }
             </header>
         );
     }
