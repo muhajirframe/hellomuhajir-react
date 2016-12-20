@@ -8,6 +8,7 @@ import PageError from "./layouts/PageError"
 import Homepage from "./layouts/Homepage"
 import Post from "./layouts/Post"
 import BasicPage from "./layouts/BasicPage"
+import Contact from "./layouts/Contact"
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
@@ -18,6 +19,7 @@ const PageContainer = (props) => (
       Homepage,
       Post,
       BasicPage,
+      Contact,
     }}
   />
 )
