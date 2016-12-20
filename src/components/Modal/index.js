@@ -5,7 +5,7 @@ import styles from './index.css'
 
 const Modal = props => {
     const items = props.navItems.map( (item) => (
-        <h3 key={item}>{item}</h3>
+        <h3 key={item} className={styles.item}>{item}</h3>
     ))
     return (
         <div className={styles.modal}>
