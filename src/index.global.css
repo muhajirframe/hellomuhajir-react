@@ -26,6 +26,7 @@ body {
 html {
   font-size: responsive 9px 21px;
   font-range: 320px 1440px;
+  font-weight: 300;
 }
 
 
@@ -56,6 +57,7 @@ body {
 
 :--headings {
   position: relative;
+  font-weight: 300;
 }
 
 :root {
