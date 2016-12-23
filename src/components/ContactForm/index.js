@@ -1,7 +1,7 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import styles from './index.css'
 
-const ContactForm = props => {
+const ContactForm = () => {
     return (
         <form>
             <fieldset className={styles.fieldset}>
