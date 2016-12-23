@@ -2,7 +2,6 @@ import React, {PropTypes} from "react"
 
 import BasicPage from '../BasicPage'
 import Button from '../../components/Button'
-import CenterVertical from '../../components/CenterVertical'
 
 import styles from './index.css'
 

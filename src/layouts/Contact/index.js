@@ -1,6 +1,5 @@
 import React, {PropTypes} from 'react';
 import BasicPage from '../BasicPage'
-import CenterVertical from '../../components/CenterVertical'
 import ContactForm from '../../components/ContactForm'
 import styles from './index.css'
 
