@@ -1,0 +1,17 @@
+.profilePicture {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.intro {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.body {
+    margin: 2rem;
+    line-height: 1.5;
+    max-width: 40rem;
+}
