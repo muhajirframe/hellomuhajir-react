@@ -6,7 +6,6 @@ import {BodyContainer} from 'phenomic'
 import styles from './index.css'
 
 const About = props => {
-    const isLoading = props.isLoading
     const body = props.body
     return (
         <BasicPage {...props}>
@@ -15,7 +14,7 @@ const About = props => {
             <p className={styles.intro}>{props.head.greet}<br />{props.head.description}</p>
             <div className={styles.body}>
                 {
-                isLoading
+                props.isLoading
                 ? <Loading />
                 : <BodyContainer>{ body }</BodyContainer>
                 }
