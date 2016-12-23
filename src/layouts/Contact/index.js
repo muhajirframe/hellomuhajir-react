@@ -7,11 +7,9 @@ import styles from './index.css'
 const Contact = props => {
     return (
         <BasicPage {...props}>
-            <CenterVertical>
-                <h1 className={styles.title}>{props.head.title}</h1>
-                <p>{props.head.description}</p>
-                <ContactForm />
-            </CenterVertical>
+            <h1 className={styles.title}>{props.head.title}</h1>
+            <p>{props.head.description}</p>
+            <ContactForm />
         </BasicPage>
     );
 };

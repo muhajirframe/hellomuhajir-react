@@ -2,6 +2,7 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
 import {joinUri} from "phenomic"
+import CenterVertical from "../../components/CenterVertical"
 
 import styles from "./index.css"
 
@@ -49,7 +50,9 @@ const BasicPage = (
         meta={ meta }
       />
         { header }
-      { children }
+      <CenterVertical>
+        { children }
+      </CenterVertical>
       { footer }
     </div>
   )

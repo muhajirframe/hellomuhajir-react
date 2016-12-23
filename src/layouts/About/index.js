@@ -11,18 +11,16 @@ const About = props => {
     const body = props.body
     return (
         <BasicPage {...props}>
-            <CenterVertical>
-                <img src={props.head.hero} alt={props.head.title}
-                className={styles.profilePicture}/>
-                <p className={styles.intro}>{props.head.greet}<br />{props.head.description}</p>
-                <div className={styles.body}>
-                    {
-                    isLoading
-                    ? <Loading />
-                    : <BodyContainer>{ body }</BodyContainer>
-                    }
-                </div>
-            </CenterVertical>
+            <img src={props.head.hero} alt={props.head.title}
+            className={styles.profilePicture}/>
+            <p className={styles.intro}>{props.head.greet}<br />{props.head.description}</p>
+            <div className={styles.body}>
+                {
+                isLoading
+                ? <Loading />
+                : <BodyContainer>{ body }</BodyContainer>
+                }
+            </div>
         </BasicPage>
     );
 };
