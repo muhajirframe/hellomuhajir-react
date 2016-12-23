@@ -33,9 +33,8 @@ class Bar extends Component {
                     <div style={styles.anothernav}>
                         {navigations}
                     </div>
-                    <Link to='/' className={styles.menuIcon}>
-                        <button onClick={this.handleMenuClick}>ICON</button>
-                    </Link>
+                        <button onClick={this.handleMenuClick} 
+                        className={styles.menuIcon}>ICON</button>
                 </nav>
                 { this.state.isModalOpen &&
                 <Modal navItems={this.props.navItems} /> }
