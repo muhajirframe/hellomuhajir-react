@@ -22,7 +22,7 @@ class Bar extends Component {
     
     render() {
         const navigations = this.props.navItems.map( item => (
-            <a href='#' key={item} className={styles.link}>{item}</a>
+            <Link to={item} key={item} className={styles.link}>{item.toUpperCase()}</Link>
         ))
         return (
             <header className={styles.header}>

@@ -10,7 +10,7 @@ const CenterVertical = props => {
 };
 
 CenterVertical.propTypes = {
-    children: PropTypes.number.isRequired,
+    children: PropTypes.node.isRequired,
 };
 
 export default CenterVertical;

@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 const AppContainer = (props) => (
   <Container>
     <DefaultHeadMeta />
-    <Bar navItems={['ABOUT', 'WORKS', 'BLOG', 'CONTACT']}/>
+    <Bar navItems={['about', 'works', 'blog', 'contact']}/>
     <Content>
       { props.children }
     </Content>
