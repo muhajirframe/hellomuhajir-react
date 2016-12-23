@@ -1,10 +1,9 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
-import { BodyContainer, joinUri} from "phenomic"
+import {joinUri} from "phenomic"
 
 import styles from "./index.css"
-import Loading from "../../components/Loading"
 
 const BasicPage = (
   {
@@ -50,13 +49,6 @@ const BasicPage = (
         meta={ meta }
       />
         { header }
-      <div>
-        {
-          isLoading
-          ? <Loading />
-          : <BodyContainer>{ body }</BodyContainer>
-        }
-      </div>
       { children }
       { footer }
     </div>
