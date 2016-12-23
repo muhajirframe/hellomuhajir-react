@@ -17,9 +17,11 @@ const LatestPosts = (props, { collection }) => {
 
   return (
     <div>
+      { props.title &&
       <h2 className={ styles.latestPosts }>
-        { "Latest Posts" }
+        { props.title }
       </h2>
+      }
       <PagesList pages={ latestPosts } />
     </div>
   )
@@ -27,6 +29,7 @@ const LatestPosts = (props, { collection }) => {
 
 LatestPosts.propTypes = {
   numberOfPosts: PropTypes.number,
+  title: PropTypes.string,
 }
 
 LatestPosts.contextTypes = {
