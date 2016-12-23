@@ -1,4 +1,4 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+Minimal React Website crafted with react / phenomic
 
 ## Install dependencies
 
