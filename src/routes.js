@@ -10,6 +10,7 @@ import Post from "./layouts/Post"
 import BasicPage from "./layouts/BasicPage"
 import Contact from "./layouts/Contact"
 import About from "./layouts/About"
+import Blog from "./layouts/Blog"
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
@@ -22,6 +23,7 @@ const PageContainer = (props) => (
       BasicPage,
       Contact,
       About,
+      Blog
     }}
   />
 )
