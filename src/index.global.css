@@ -97,4 +97,5 @@ hr {
   background: var(--colorNeutral);
   opacity: 0.2;
   margin: 2rem 0;
+  width: 100%;
 }
