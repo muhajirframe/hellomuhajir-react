@@ -11,12 +11,16 @@
   font-size: 0.85rem;
   max-width: 50rem;
   margin: 0 1rem;
-
-  & p {
-    max-width: 100%;
+  
+  @media (width >= 1024px) {
+    min-width: 50rem;
   }
 
   & img {
     max-width: 100%;
+  }
+  & pre {
+    overflow-x: auto;
+    max-width: 90vw;
   }
 }
