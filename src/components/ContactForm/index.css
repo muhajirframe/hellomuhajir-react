@@ -14,7 +14,6 @@
 }
 
 .textarea {
-    /*commented because it conflict with stylint, fix it later*/
-    /*composes: input;*/
-    min-height: 8em;
+    composes: input;
+    min-height: 8rem;
 }
