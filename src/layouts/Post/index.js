@@ -22,7 +22,16 @@ const Post = (props) => {
           </time>
         }
       </header>
+        { props.head.hero &&
+          <img src={props.head.hero} className={styles.hero} alt={props.head.title} />
+        }
       <div className={styles.body}>
+          {
+            props.head.tags &&
+            props.head.tags.map( tag => (
+              <span className={styles.tag}>{tag.toUpperCase()}</span>
+            ))
+          }
           {
           props.isLoading
           ? <Loading />
