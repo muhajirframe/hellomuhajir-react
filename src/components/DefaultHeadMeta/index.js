@@ -17,6 +17,9 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
         ...props.scripts ? props.scripts : [],
       ] }
+      link={[
+        {rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans:300"}
+      ]}
     />
 
     { /* meta viewport safari/chrome/edge */ }
