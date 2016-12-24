@@ -22,7 +22,7 @@ class Bar extends Component {
     
     render() {
         const navigations = this.props.navItems.map( item => (
-            <Link to={item} key={item} className={styles.link}>{item.toUpperCase()}</Link>
+            <Link to={'/'+item} key={item} className={styles.link}>{item.toUpperCase()}</Link>
         ))
         return (
             <header className={styles.header}>
@@ -37,7 +37,7 @@ class Bar extends Component {
                         className={styles.menuIcon}>ICON</button>
                 </nav>
                 { this.state.isModalOpen &&
-                <Modal navItems={this.props.navItems} /> }
+                <Modal navItems={this.props.navItems} handleMenuClick={this.handleMenuClick}/> }
             </header>
         );
     }
