@@ -4,14 +4,21 @@ import { Link } from "phenomic"
 import Button from "../../components/Button"
 
 import styles from "./index.css"
+import img from "../../../content/assets/react.svg"
 
-const PagePreview = ({ __url, title, date, description }) => {
+const PagePreview = ({ __url, title, date, description, withHero, hero }) => {
   const pageDate = date ? new Date(date) : null
 
   return (
     <div className={ styles.wrapper }>
-      <Link to={ __url } className={ styles.title }>
-        { title }
+      <Link to={ __url }>
+        { withHero && hero && 
+        <div className={styles.hero}>
+          <img src={hero} className={ styles.hero }/>
+        </div> }
+        <div className={styles.title}>
+          { title }
+        </div>
       </Link>
       <div className={ styles.meta }>
         {
@@ -37,6 +44,8 @@ PagePreview.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   description: PropTypes.string,
+  withHero: PropTypes.bool,
+  hero: PropTypes.string,
 }
 
 export default PagePreview
