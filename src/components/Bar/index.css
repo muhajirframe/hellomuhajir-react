@@ -22,7 +22,9 @@
     margin: 0 10px;
 }
 .menuIcon {
-    display: none
+    display: none;
+    background: none;
+    border: none;
 }
 
 @media (width <= 425px) {
