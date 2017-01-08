@@ -1,16 +1,26 @@
 .fieldset {
     border: none;
 }
-
-.input {
+.general {
     display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     padding: 0.5rem;
-    min-width: 23rem;
     font-size: 0.8rem;
     color: var(--colorText);
+}
+
+.input {
+    composes: general;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 23rem;
     margin: 0.8rem 0;
+}
+.submit {
+    composes: general;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
 }
 
 .textarea {
