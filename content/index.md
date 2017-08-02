@@ -1,5 +1,5 @@
 ---
-title: Hi, I am Muhammad Muhajir
+title: Moved to muhajirframe.com
 tagline: Web Developer
 layout: Homepage
 cta:
