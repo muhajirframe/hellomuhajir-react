@@ -1,5 +1,5 @@
 ---
-title: Moved to muhajirframe.com
+title: now live in muhajirframe.com
 tagline: Web Developer
 layout: Homepage
 cta:
